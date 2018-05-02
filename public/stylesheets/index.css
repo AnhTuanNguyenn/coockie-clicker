@@ -1,0 +1,210 @@
+table {
+  text-align: left;
+  width: 100%;
+  margin-top: 25px;
+}
+
+body {
+  background: url(../img/ring.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: auto;
+  margin: 0;
+}
+
+fieldset {
+  text-align: center;
+}
+
+h1 {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 60px;
+  width: 500px;
+  animation-duration: 3s;
+  animation-name: acc;
+  position: relative;
+}
+
+@keyframes acc {
+  0% {
+    bottom: 300px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 40px 25px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 9px 0 4px #780014;
+  cursor: url(../stylesheets/souris.png), pointer;
+}
+
+.button:active {
+  background-color: red;
+  box-shadow: 0 5px #780014;
+  transform: translateY(4px);
+}
+.span12 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+#about p {
+  font-size: 3em;
+  text-shadow: 1px 1px #FFF;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+}
+
+#game-wrapper {
+  width: 60%;
+  height: 50%;
+  border-radius: 20%;
+  border: aqua 5px groove;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#top_user,
+#top_rank {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#top_user th,
+#top_rank th {
+  background-color: transparent;
+  color: #FFF;
+}
+
+#top_user td,
+#top_rank td {
+  background-color: transparent;
+  color: #FFF;
+}
+
+#score {
+  padding-top: 59px;
+  margin-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  width: 163px;
+  height: auto;
+  border-radius: 10px;
+  position: fixed;
+  color: red;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+  border-width: 5px;
+  border-style: double;
+  border-color: yellow;
+  display: none;
+  background-image: url(../stylesheets/panneau.png);
+  background-size: cover;
+  line-height: 3;
+  top: 0;
+  right: 0;
+}
+
+#clicker-button {
+  width: 250px;
+  display: none;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 0px;
+  position: relative;
+  cursor: url(../stylesheets/souris.png), pointer;
+}
+
+.active_click {
+  border: 5px groove #FFF;
+}
+
+#clicker-button #user_a {
+  width: 100%;
+}
+
+#clicker-button #user_b {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  z-index: 1;
+  display: none;
+}
+
+.animate_b {
+  -webkit-animation-name: key_b;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite;
+  /* Safari 4.0 - 8.0 */
+  animation-name: key_b;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes key_b {
+  0% {
+    top: 40%
+  }
+  25% {
+    top: 45%
+  }
+  50% {
+    top: 50%
+  }
+  75% {
+    top: 45%
+  }
+  100% {
+    top: 40%
+  }
+}
+
+/* Standard syntax */
+
+@keyframes key_b {
+  0% {
+    top: 40%
+  }
+  25% {
+    top: 45%
+  }
+  50% {
+    top: 50%
+  }
+  75% {
+    top: 45%
+  }
+  100% {
+    top: 40%
+  }
+}
+
+.animate {
+  -webkit-animation-name: key_a;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite;
+  /* Safari 4.0 - 8.0 */
+  animation-name: key_a;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}

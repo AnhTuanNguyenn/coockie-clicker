@@ -3,6 +3,7 @@ $(document).ready(function(){
   window.clicker  = new Clicker();
 
   $('#join-game-form').on('submit', function(evt){
+  	$("#clicker-button").show();
     clicker.joinGame($(this).serializeArray()[0].value);
     return false;
   });

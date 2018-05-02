@@ -1,2 +1,2 @@
-# coockie-clocker
-web nodejs realtime
+# Nodejs
+Cookie clicker
